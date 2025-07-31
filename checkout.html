@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkout page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cairo:wght@200..1000&family=Cardo:ital,wght@0,400;0,700;1,400&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patua+One&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/Logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body class="checkout">
+  <!-- start nav -->
+  <nav class="navbar navbar-expand-lg navbar-light p-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/Frame 168 (1).png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 me-md-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comp.html">compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">About</a>
+
+          </li>
+
+        </ul>
+
+        <div class="nav-icons d-flex gap-4 ms-md-5">
+          <img src="./images/mdi_account-alert-outline.png" alt="" />
+          <img src="./images/Vector (21).png" alt="" />
+          <img src="./images/akar-icons_heart (1).png" alt="" />
+          <img src="./images/Vector (22).png" alt="" />
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollUpBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <!-- HEADER SECTION -->
+  <div class="header" style="background-image: url('images/cover.png'); height: 300px;">
+    <div class="header-content py-4">
+      <!-- ✅ Small logo above breadcrumb -->
+      <img src="images/logo1.png" alt="Logo" style="width: 60px;" class="mb-2">
+      <!-- Page Title -->
+      <h1 class="mt-3 fw-bold">Checkout</h1>
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="cart.html">Cart</a></li>
+          <li class="breadcrumb-item">Checkout</li>
+        </ol>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!--start Billing Details-->
+  <div class="container my-3">
+    <div class="row">
+
+      <div class="p-5 col-md-6">
+        <div class="">
+          <h3 class="my-4">Billing details</h3>
+          <form>
+            <div class="row md-3">
+              <div class="col-md-6">
+                <label class="validationDefault01">First Name</label>
+                <input type="text" class="form-control" id="validationDefault01" required placeholder="First name">
+              </div>
+              <div class="col-md-6">
+                <label class="validationDefault02">Last Name</label>
+                <input type="text" class="form-control" id="validationDefault02" required placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationDefault03">Company Name (Optional)</label>
+              <input type="text" class="form-control" id="validationDefault03" required placeholder="Company Name">
+            </div>
+
+            <div class="md-6 my-4">
+              <label for="validationCustom04" class="form-label">Country / Region</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Egypt</option>
+                <option>Kuwait</option>
+                <option>Qatar</option>
+                <option>Oman</option>
+                <option>Bahrain</option>
+              </select>
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationDefault05">Street Address</label>
+              <input type="text" class="form-control" id="validationDefault05" required placeholder="Street Address">
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationDefault06">Town / City</label>
+              <input type="text" class="form-control" id="validationDefault06" required placeholder="Town / City">
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationCustom07">Province</label>
+              <select class="form-select" id="validationCustom07" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Western Province</option>
+                <option>Eastern Province</option>
+              </select>
+            </div>
+
+
+            <div class="md-6 my-4">
+              <label class="validationDefault08">ZIP Code</label>
+              <input type="text" class="form-control" id="validationDefault08" required placeholder="ZIP Code">
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationDefault09">Phone</label>
+              <input type="tel" class="form-control" id="validationDefault09" required placeholder="Phone Number">
+            </div>
+
+
+            <div class="md-6 my-4">
+              <label class="validationDefault010">Email Address</label>
+              <input type="email" class="form-control" id="validationDefault010" required placeholder="Email">
+            </div>
+
+            <div class="md-6 my-4">
+              <label class="validationDefault011">Additional Information</label>
+              <textarea class="form-control" id="validationDefault011" required rows="3"></textarea>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="p-5 col-md-6">
+        <div class=" my-3">
+          <div class="row my-3">
+            <div class="col-md-6">
+              <h3>Product(s)</h3>
+              <div id="checkout-products"></div>
+              <p><b>Subtotal</b></p>
+              <p id="checkout-subtotal"></p>
+              <p><b>Total</b></p>
+              <p id="checkout-total" style="color:#B88E2F;"></p>
+            </div>
+
+
+
+            <hr>
+            <p><b>Direct Bank Transfer</b></p>
+            <p>Make your payment directly into our bank account please use your order ID as the payment reference. Your
+              order will not be Shipped Untill the funds have cleared in our account.</p>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Direct Bank Transfer
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Cash On Delivery
+              </label>
+            </div>
+            <br>
+          </div>
+          <p>Your personal data will be used to support your experience throughout this website to manageaccess to your
+            account and for other purposes described in our <b>Privacy policy</b></p>
+          <button type="button" class="btn w-50 mt-3 btn-outline-dark" onclick="validateAndCheckout()">
+            confirm Order
+          </button>
+
+
+          <div class="modal fade" id="checkoutModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fw-bold">Order Summary</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="./images/Eo_circle_green_checkmark.svg.png" alt="" class="w-50 h-50 mb-3">
+                  <p><strong>Subtotal:</strong> <span id="modalSubtotal"></span></p>
+                  <p><strong>Tax (14%):</strong> <span id="modalTax"></span></p>
+                  <p class="fs-5"><strong>Total:</strong> <span id="modalTotal"></span></p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Billing Details-->
+  <div class=" info py-5">
+    <div class="container" id="contact">
+      <div class="row text-center text-md-start">
+        <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+          <img src="./images/trophy 1 (1).png" alt="Quality" style="width: 40px; height: 40px;" class="me-3">
+          <div>
+            <h5 class="mb-1">High Quality</h5>
+            <p class="text-muted mb-0">Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+          <img src="./images/guarantee (1).png" alt="Warranty" style="width: 40px; height: 40px;" class="me-3">
+          <div>
+            <h5 class="mb-1">Warranty Protection</h5>
+            <p class="text-muted mb-0">Over 2 years</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+          <img src="./images/shipping (1).png" alt="Shipping" style="width: 40px; height: 40px;" class="me-3">
+          <div>
+            <h5 class="mb-1">Free Shipping</h5>
+            <p class="text-muted mb-0">Order over $150</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+          <img src="./images/customer-support (1).png" alt="Support" style="width: 40px; height: 40px;" class="me-3">
+          <div>
+            <h5 class="mb-1">24 / 7 Support</h5>
+            <p class="text-muted mb-0">Dedicated support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Checkout-->
+
+  <!-- start footer -->
+  <hr class="border border-0 my-5">
+  <footer class="text-md-start text-center" id="about">
+    <div class="container">
+      <div class="row justify-content-center gap-4">
+        <div class="company-name col-md-3">
+          <h2 class="mb-5">Funiro.</h2>
+          <p class="text-muted">Lorem ipsum dolor sit amet, conse
+            ctetur adipiscing elit. Vivamus hes
+            ndrerit suscipit egestas. </p>
+        </div>
+        <div class="company-links col-md-2">
+          <h4 class="light-color mb-5 text-muted">Links</h4>
+          <ul class="list-unstyled m-0 p-0">
+            <li class="mt-4">Home
+            </li>
+            <li class="mt-3">Shop</li>
+            <li class="mt-3">About</li>
+            <li class="mt-3">Contact</li>
+          </ul>
+        </div>
+        <div class="company-contact col-md-2">
+          <h4 class="mb-5 text-muted">Help</h4>
+          <ul class="list-unstyled m-0 p-0">
+            <li class="mt-4">Payment Options
+            </li>
+            <li class="mt-3">Returns</li>
+            <li class="mt-3">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="company-follow col-md-4">
+          <h4 class="mb-5 text-muted">Newsletter</h4>
+          <form action="post" class="d-flex justify-content-lg-start justify-content-center">
+            <input type="text" placeholder="Enter Your Email Address" class="border-0 border-bottom">
+            <label for="" class="ms-2 fw-bold">Subscribe</label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <div class="container">
+        <hr>
+        <p class="py-3 text-lg-start text-center">2023 furino. All rights reverved</p>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

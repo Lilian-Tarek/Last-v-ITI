@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Syltherine",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 2.500.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (15).png"
+  },
+  {
+    "name": "Liviosa",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 4.500.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (22).png"
+  },
+  {
+    "name": "Lolito",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 2.550.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (16).png"
+  },
+  {
+    "name": "Respira",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 7.500.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (17).png"
+  },
+  {
+    "name": "Grifo",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 2.590.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (18).png"
+  },
+  {
+    "name": "Muggo",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 100.500.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (19).png"
+  },
+  {
+    "name": "Pinkgy",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 2.520.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (20).png"
+  },
+  {
+    "name": "Potty",
+    "desc": "Stylish cafe chair",
+    "price": "Rp 21.500.000",
+    "oldPrice": "Rp 3.500.000",
+    "image": "./images/Images (20).png"
+  }
+]
